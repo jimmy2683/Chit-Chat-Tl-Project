@@ -1,0 +1,146 @@
+.Signup {
+    width: 90vw;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    font-weight: 900;
+    font-size: max(1vw, 1vh);
+
+    .Welcome h1 {
+        font-size: min(5vw, 5vh, 50px);
+        font-weight: 900;
+        color: rgba(94, 24, 82, 0.797);
+        font-family: cursive;
+    }
+
+    .SignupForm {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: last baseline;
+        justify-content: center;
+        font-weight: 900;
+        font-size: max(1vw, 1vh);
+
+        .image {
+            width: 80%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            padding-right: 0%;
+
+            img {
+                height: min(7.5vw, 7.5vh);
+                aspect-ratio: 1;
+                border-radius: 50%;
+                object-fit: cover;
+                object-position: center;
+            }
+
+            label {
+                border: 2px solid cyan;
+                background: rgba(196, 203, 203, 0.47);
+                padding: 20px 30px 20px 30px;
+                border-radius: 5px;
+                cursor: pointer;
+                font-weight: 100;
+                font-size: max(0.75vw, 0.75vh);
+                color: rgba(0, 0, 0, 0.754);
+                width: 40%;
+            }
+            input {
+                background: rgba(196, 203, 203, 0.47);
+                font-weight: 100;
+                font-size: max(0.75vw, 0.75vh);
+            }
+            input::-webkit-file-upload-button {
+                background: transparent;
+                display: none;
+            }
+        }
+
+        .email {
+            display: flex;
+            margin-right: 5%;
+            align-items: center;
+            justify-content: space-between;
+            width: 80%;
+        }
+        .password {
+            display: flex;
+            margin-right: 5%;
+            align-items: center;
+            justify-content: space-between;
+            width: 80%;
+        }
+        .confirmpassword {
+            display: flex;
+            margin-right: 5%;
+            align-items: center;
+            justify-content: space-between;
+            width: 80%;
+        }
+        .Username {
+            display: flex;
+            align-items: center;
+            margin-right: 5%;
+            justify-content: space-between;
+            width: 80%;
+        }
+        .buttons {
+            border: 2px solid rgba(230, 0, 255, 0.896);
+            padding: max(0.5vh, 0.5vw) max(1vh, 1vw) max(0.5vh, 0.5vw) max(1vh, 1vw);
+            background: rgba(196, 203, 203, 0.47);
+            border-radius: 5px;
+            margin-right: 5%;
+            display: flex;
+            justify-content: center;
+            width: 10%;
+            translate: 100%;
+            margin-bottom: 20px;
+
+            button {
+                padding: 10px;
+                font-size: max(1vw, 1vh);
+                background: transparent;
+                border: 0 transparent;
+                font-weight: 900;
+                flex: 1;
+                cursor: pointer;
+            }
+        }
+        .buttons:hover {
+            background: rgba(255, 255, 255, 0.457);
+            transition: 1s;
+        }
+        input {
+            padding: 20px;
+            border-radius: 5px;
+            background: rgba(196, 203, 203, 0.47);
+            border: 2px solid cyan;
+            width: 60%;
+        }
+        ::placeholder {
+            padding: 0px 20px 0 20px;
+            font-weight: 100;
+            font-size: max(0.75vw, 0.75vh);
+            color: rgba(0, 0, 0, 0.754);
+        }
+        .gotologin {
+            text-align: center;
+
+            button {
+                padding: max(0.5vw, 0.5vh) max(1vw, 1vh) max(0.5vw, 0.5vh) max(1vw, 1vh);
+                border-radius: 5px;
+                border: 2px solid rgba(230, 0, 255, 0.896);
+                background: rgba(196, 203, 203, 0.47);
+                cursor: pointer;
+            }
+            button:hover {
+                background: rgba(255, 255, 255, 0.457);
+                transition: 1s;
+            }
+        }
+    }
+}
